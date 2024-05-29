@@ -1,0 +1,250 @@
+@prefix ns1: <http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:Bundesliga_2023_Bayern_Munich_vs_Borussia_Dortmund a ns1:Match ;
+    ns1:goalsByTeam1 1 ;
+    ns1:goalsByTeam2 3 ;
+    ns1:involvesTeam ns1:Bayern_Munich,
+        ns1:Borussia_Dortmund ;
+    ns1:isHostedBy ns1:Allianz_Arena ;
+    ns1:matchAttendees 75000 ;
+    ns1:matchClass "Men's" ;
+    ns1:matchDate "2023-04-09T17:00:00+00:00"^^xsd:dateTime ;
+    ns1:matchName "Bundesliga 2023_Bayern Munich vs Borussia Dortmund" ;
+    ns1:partOfCompetition ns1:Bundesliga ;
+    ns1:team1Name "Bayern Munich" ;
+    ns1:team2Name "Borussia Dortmund" ;
+    ns1:winnerTeam "Borussia Dortmund" .
+
+ns1:Champions_League_2023_FC_Barcelona_vs_Real_Madrid_CF a ns1:Match ;
+    ns1:goalsByTeam1 2 ;
+    ns1:goalsByTeam2 2 ;
+    ns1:involvesTeam ns1:FC_Barcelona,
+        ns1:Real_Madrid_CF ;
+    ns1:isHostedBy ns1:Camp_Nou ;
+    ns1:matchAttendees 99354 ;
+    ns1:matchClass "Men's" ;
+    ns1:matchDate "2023-04-06T19:45:00+00:00"^^xsd:dateTime ;
+    ns1:matchName "Champions League 2023_FC Barcelona vs Real Madrid CF" ;
+    ns1:partOfCompetition ns1:UEFA_Champions_League ;
+    ns1:team1Name "FC Barcelona" ;
+    ns1:team2Name "Real Madrid CF" ;
+    ns1:winnerTeam "Draw" .
+
+ns1:La_Liga_2023_Real_Madrid_CF_vs_Atletico_Madrid a ns1:Match ;
+    ns1:goalsByTeam1 1 ;
+    ns1:goalsByTeam2 1 ;
+    ns1:involvesTeam ns1:Atletico_Madrid,
+        ns1:Real_Madrid_CF ;
+    ns1:isHostedBy ns1:Santiago_Bernabeu ;
+    ns1:matchAttendees 81044 ;
+    ns1:matchClass "Men's" ;
+    ns1:matchDate "2023-04-10T16:00:00+00:00"^^xsd:dateTime ;
+    ns1:matchName "La Liga 2023_Real Madrid CF vs Atletico Madrid" ;
+    ns1:partOfCompetition ns1:La_Liga ;
+    ns1:team1Name "Real Madrid CF" ;
+    ns1:team2Name "Atletico Madrid" ;
+    ns1:winnerTeam "Draw" .
+
+ns1:Ligue_1_2023_Paris_Saint-Germain_vs_Lyon a ns1:Match ;
+    ns1:goalsByTeam1 4 ;
+    ns1:goalsByTeam2 0 ;
+    ns1:involvesTeam ns1:Lyon,
+        ns1:Paris_Saint-Germain ;
+    ns1:isHostedBy ns1:Parc_des_Princes ;
+    ns1:matchAttendees 48000 ;
+    ns1:matchClass "Men's" ;
+    ns1:matchDate "2023-04-11T15:00:00+00:00"^^xsd:dateTime ;
+    ns1:matchName "Ligue 1 2023_Paris Saint-Germain vs Lyon" ;
+    ns1:partOfCompetition ns1:Ligue_1 ;
+    ns1:team1Name "Paris Saint-Germain" ;
+    ns1:team2Name "Lyon" ;
+    ns1:winnerTeam "Paris Saint-Germain" .
+
+ns1:MLS_2023_Los_Angeles_FC_vs_LA_Galaxy a ns1:Match ;
+    ns1:goalsByTeam1 2 ;
+    ns1:goalsByTeam2 2 ;
+    ns1:involvesTeam ns1:LA_Galaxy,
+        ns1:Los_Angeles_FC ;
+    ns1:isHostedBy ns1:Banc_of_California_Stadium ;
+    ns1:matchAttendees 22000 ;
+    ns1:matchClass "Men's" ;
+    ns1:matchDate "2023-04-12T14:00:00+00:00"^^xsd:dateTime ;
+    ns1:matchName "MLS 2023_Los Angeles FC vs LA Galaxy" ;
+    ns1:partOfCompetition ns1:MLS ;
+    ns1:team1Name "Los Angeles FC" ;
+    ns1:team2Name "LA Galaxy" ;
+    ns1:winnerTeam "Draw" .
+
+ns1:Premier_League_2023_Liverpool_FC_vs_Manchester_City_FC a ns1:Match ;
+    ns1:goalsByTeam1 3 ;
+    ns1:goalsByTeam2 1 ;
+    ns1:involvesTeam ns1:Liverpool_FC,
+        ns1:Manchester_City_FC ;
+    ns1:isHostedBy ns1:Anfield ;
+    ns1:matchAttendees 53000 ;
+    ns1:matchClass "Men's" ;
+    ns1:matchDate "2023-04-05T20:00:00+00:00"^^xsd:dateTime ;
+    ns1:matchName "Premier League 2023_Liverpool FC vs Manchester City FC" ;
+    ns1:partOfCompetition ns1:Premier_League ;
+    ns1:team1Name "Liverpool FC" ;
+    ns1:team2Name "Manchester City FC" ;
+    ns1:winnerTeam "Liverpool FC" .
+
+ns1:Premier_League_2023_Manchester_City_FC_vs_Arsenal_FC a ns1:Match ;
+    ns1:goalsByTeam1 3 ;
+    ns1:goalsByTeam2 2 ;
+    ns1:involvesTeam ns1:Arsenal_FC,
+        ns1:Manchester_City_FC ;
+    ns1:isHostedBy ns1:Etihad_Stadium ;
+    ns1:matchAttendees 55097 ;
+    ns1:matchClass "Men's" ;
+    ns1:matchDate "2023-04-13T13:00:00+00:00"^^xsd:dateTime ;
+    ns1:matchName "Premier League 2023_Manchester City FC vs Arsenal FC" ;
+    ns1:partOfCompetition ns1:Premier_League ;
+    ns1:team1Name "Manchester City FC" ;
+    ns1:team2Name "Arsenal FC" ;
+    ns1:winnerTeam "Manchester City FC" .
+
+ns1:Premier_League_2023_Manchester_United_FC_vs_Chelsea_FC a ns1:Match ;
+    ns1:goalsByTeam1 0 ;
+    ns1:goalsByTeam2 0 ;
+    ns1:involvesTeam ns1:Chelsea_FC,
+        ns1:Manchester_United_FC ;
+    ns1:isHostedBy ns1:Old_Trafford ;
+    ns1:matchAttendees 76000 ;
+    ns1:matchClass "Men's" ;
+    ns1:matchDate "2023-04-07T21:00:00+00:00"^^xsd:dateTime ;
+    ns1:matchName "Premier League 2023_Manchester United FC vs Chelsea FC" ;
+    ns1:partOfCompetition ns1:Premier_League ;
+    ns1:team1Name "Manchester United FC" ;
+    ns1:team2Name "Chelsea FC" ;
+    ns1:winnerTeam "Draw" .
+
+ns1:Serie_A_2023_AC_Milan_vs_Juventus_FC a ns1:Match ;
+    ns1:goalsByTeam1 2 ;
+    ns1:goalsByTeam2 3 ;
+    ns1:involvesTeam ns1:AC_Milan,
+        ns1:Juventus_FC ;
+    ns1:isHostedBy ns1:San_Siro ;
+    ns1:matchAttendees 80018 ;
+    ns1:matchClass "Men's" ;
+    ns1:matchDate "2023-04-08T18:30:00+00:00"^^xsd:dateTime ;
+    ns1:matchName "Serie A 2023_AC Milan vs Juventus FC" ;
+    ns1:partOfCompetition ns1:Serie_A ;
+    ns1:team1Name "AC Milan" ;
+    ns1:team2Name "Juventus FC" ;
+    ns1:winnerTeam "Juventus FC" .
+
+ns1:Serie_A_2023_AS_Roma_vs_SSC_Napoli a ns1:Match ;
+    ns1:goalsByTeam1 0 ;
+    ns1:goalsByTeam2 1 ;
+    ns1:involvesTeam ns1:AS_Roma,
+        ns1:SSC_Napoli ;
+    ns1:isHostedBy ns1:Stadio_Olimpico ;
+    ns1:matchAttendees 70634 ;
+    ns1:matchClass "Men's" ;
+    ns1:matchDate "2023-04-14T12:00:00+00:00"^^xsd:dateTime ;
+    ns1:matchName "Serie A 2023_AS Roma vs SSC Napoli" ;
+    ns1:partOfCompetition ns1:Serie_A ;
+    ns1:team1Name "AS Roma" ;
+    ns1:team2Name "SSC Napoli" ;
+    ns1:winnerTeam "SSC Napoli" .
+
+ns1:AC_Milan a ns1:Team .
+
+ns1:AS_Roma a ns1:Team .
+
+ns1:Allianz_Arena a ns1:Stadium ;
+    ns1:stadiumCapacity 75000 ;
+    ns1:stadiumName "Allianz Arena" .
+
+ns1:Anfield a ns1:Stadium ;
+    ns1:stadiumCapacity 54000 ;
+    ns1:stadiumName "Anfield" .
+
+ns1:Arsenal_FC a ns1:Team .
+
+ns1:Atletico_Madrid a ns1:Team .
+
+ns1:Banc_of_California_Stadium a ns1:Stadium ;
+    ns1:stadiumCapacity 22000 ;
+    ns1:stadiumName "Banc of California Stadium" .
+
+ns1:Bayern_Munich a ns1:Team .
+
+ns1:Borussia_Dortmund a ns1:Team .
+
+ns1:Bundesliga a ns1:Competition ;
+    ns1:competitionName "Bundesliga" .
+
+ns1:Camp_Nou a ns1:Stadium ;
+    ns1:stadiumCapacity 99354 ;
+    ns1:stadiumName "Camp Nou" .
+
+ns1:Chelsea_FC a ns1:Team .
+
+ns1:Etihad_Stadium a ns1:Stadium ;
+    ns1:stadiumCapacity 55000 ;
+    ns1:stadiumName "Etihad Stadium" .
+
+ns1:FC_Barcelona a ns1:Team .
+
+ns1:Juventus_FC a ns1:Team .
+
+ns1:LA_Galaxy a ns1:Team .
+
+ns1:La_Liga a ns1:Competition ;
+    ns1:competitionName "La Liga" .
+
+ns1:Ligue_1 a ns1:Competition ;
+    ns1:competitionName "Ligue 1" .
+
+ns1:Liverpool_FC a ns1:Team .
+
+ns1:Los_Angeles_FC a ns1:Team .
+
+ns1:Lyon a ns1:Team .
+
+ns1:MLS a ns1:Competition ;
+    ns1:competitionName "MLS" .
+
+ns1:Manchester_United_FC a ns1:Team .
+
+ns1:Old_Trafford a ns1:Stadium ;
+    ns1:stadiumCapacity 76000 ;
+    ns1:stadiumName "Old Trafford" .
+
+ns1:Parc_des_Princes a ns1:Stadium ;
+    ns1:stadiumCapacity 48000 ;
+    ns1:stadiumName "Parc des Princes" .
+
+ns1:Paris_Saint-Germain a ns1:Team .
+
+ns1:SSC_Napoli a ns1:Team .
+
+ns1:San_Siro a ns1:Stadium ;
+    ns1:stadiumCapacity 80000 ;
+    ns1:stadiumName "San Siro" .
+
+ns1:Santiago_Bernabeu a ns1:Stadium ;
+    ns1:stadiumCapacity 81044 ;
+    ns1:stadiumName "Santiago Bernabeu" .
+
+ns1:Stadio_Olimpico a ns1:Stadium ;
+    ns1:stadiumCapacity 70634 ;
+    ns1:stadiumName "Stadio Olimpico" .
+
+ns1:UEFA_Champions_League a ns1:Competition ;
+    ns1:competitionName "UEFA Champions League" .
+
+ns1:Manchester_City_FC a ns1:Team .
+
+ns1:Real_Madrid_CF a ns1:Team .
+
+ns1:Serie_A a ns1:Competition ;
+    ns1:competitionName "Serie A" .
+
+ns1:Premier_League a ns1:Competition ;
+    ns1:competitionName "Premier League" .
+

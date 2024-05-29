@@ -1,0 +1,3141 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#"
+     xml:base="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch"
+     xmlns:ex="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#involvesTeam -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#involvesTeam">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#isHostedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#isHostedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#partOfCompetition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#partOfCompetition">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#competitionName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#competitionName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#goalsByTeam1 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#goalsByTeam1">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#goalsByTeam2 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#goalsByTeam2">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#matchAttendees -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#matchAttendees">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#matchClass -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#matchClass">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#matchDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#matchDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#matchName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#matchName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#stadiumCapacity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#stadiumCapacity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#stadiumName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#stadiumName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#team1Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#team1Name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#team2Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#team2Name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#winnerTeam -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#winnerTeam">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#BigStadium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#BigStadium"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#competitionName"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#HighScoringMatch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#HighScoringMatch"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#isHostedBy"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#partOfCompetition"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#goalsByTeam1"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#goalsByTeam2"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#matchAttendees"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#matchName"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#team1Name"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#team2Name"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#winnerTeam"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#PopularMatch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#PopularMatch"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#stadiumCapacity"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#stadiumName"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/resource/Al-Sadaqua_Walsalam_Stadium -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Al-Sadaqua_Walsalam_Stadium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">21500</stadiumCapacity>
+        <stadiumName xml:lang="en">Al-Sadaqua Walsalam Stadium</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Al_Kuwait_Sports_Club_Stadium -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Al_Kuwait_Sports_Club_Stadium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">12350</stadiumCapacity>
+        <stadiumName xml:lang="en">Al Kuwait Sports Club Stadium</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Arsenal_F.C. -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Arsenal_F.C.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Arsenal_Stadium -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Arsenal_Stadium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">38419</stadiumCapacity>
+        <stadiumName xml:lang="en">Arsenal Stadium</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Aston_Villa_F.C. -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Aston_Villa_F.C.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Bangor_City_F.C. -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Bangor_City_F.C.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Birmingham_City_F.C. -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Birmingham_City_F.C.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Blackpool_F.C. -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Blackpool_F.C.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Bolton_Wanderers_F.C. -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Bolton_Wanderers_F.C.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Brentford_F.C. -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Brentford_F.C.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Bristol_City_F.C. -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Bristol_City_F.C.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/CS_Bourgoin-Jallieu -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/CS_Bourgoin-Jallieu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Cambridge_United_F.C. -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Cambridge_United_F.C.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Camross_GAA -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Camross_GAA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Cardiff_Blues -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Cardiff_Blues">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Cardiff_City_F.C. -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Cardiff_City_F.C.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Carlisle_United_F.C. -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Carlisle_United_F.C.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Castres_Olympique -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Castres_Olympique">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Clydesdale_F.C. -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Clydesdale_F.C.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Croke_Park -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Croke_Park">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">82300</stadiumCapacity>
+        <stadiumName xml:lang="en">Croke Park</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Crystal_Palace_National_Sports_Centre -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Crystal_Palace_National_Sports_Centre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">40000</stadiumCapacity>
+        <stadiumName xml:lang="en">Crystal Palace National Sports Centre</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Dumbarton_F.C. -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Dumbarton_F.C.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/East_Bengal_Club -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/East_Bengal_Club">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/East_Bengal_Ground -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/East_Bengal_Ground">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">23500</stadiumCapacity>
+        <stadiumName xml:lang="en">East Bengal Ground</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Farrar_Road_Stadium -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Farrar_Road_Stadium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1500</stadiumCapacity>
+        <stadiumName xml:lang="en">Farrar Road Stadium</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Glen_Rovers_GAA -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Glen_Rovers_GAA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Huddersfield_Town_A.F.C. -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Huddersfield_Town_A.F.C.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Jaber_Al-Ahmad_International_Stadium -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Jaber_Al-Ahmad_International_Stadium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">60000</stadiumCapacity>
+        <stadiumName xml:lang="en">Jaber Al-Ahmad International Stadium</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Japan_national_football_team -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Japan_national_football_team">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Kuwait_SC -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Kuwait_SC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Leicester_Tigers -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Leicester_Tigers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Millennium_Stadium -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Millennium_Stadium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumName xml:lang="en">Millennium Stadium</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Preston_North_End_F.C. -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Preston_North_End_F.C.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Pyongyang_Sports_Club -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Pyongyang_Sports_Club">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Qadsia_SC -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Qadsia_SC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Qatar_national_football_team -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Qatar_national_football_team">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Sabah_Al_Salem_Stadium -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Sabah_Al_Salem_Stadium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">15000</stadiumCapacity>
+        <stadiumName xml:lang="en">Sabah Al Salem Stadium</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Stade_de_la_Méditerranée -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Stade_de_la_Méditerranée">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumName xml:lang="en">Stade de la Méditerranée</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Wembley_Stadium -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Wembley_Stadium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">90000</stadiumCapacity>
+        <stadiumName xml:lang="en">Wembley Stadium</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Zayed_Sports_City_Stadium -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Zayed_Sports_City_Stadium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumName xml:lang="en">Zayed Sports City Stadium</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/1874_Scottish_Cup_Final -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/1874_Scottish_Cup_Final">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Clydesdale_F.C."/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Queen&apos;s_Park_F.C."/>
+        <isHostedBy rdf:resource="http://dbpedia.org/resource/Hampden_Park_(1873–1883)"/>
+        <partOfCompetition rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#1874%20Scottish%20Cup%20Final"/>
+        <goalsByTeam1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</goalsByTeam1>
+        <goalsByTeam2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</goalsByTeam2>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2500</matchAttendees>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1874-03-21T00:00:00</matchDate>
+        <matchName xml:lang="en">1874 Scottish Cup Final</matchName>
+        <team1Name xml:lang="en">Clydesdale F.C.</team1Name>
+        <team2Name xml:lang="en">Queen&apos;s Park F.C.</team2Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/1881_Scottish_Cup_Final -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/1881_Scottish_Cup_Final">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Dumbarton_F.C."/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Queen&apos;s_Park_F.C."/>
+        <isHostedBy rdf:resource="http://dbpedia.org/resource/Kinning_Park_(sports_ground)"/>
+        <partOfCompetition rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#1881%20Scottish%20Cup%20Final"/>
+        <goalsByTeam1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</goalsByTeam1>
+        <goalsByTeam1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</goalsByTeam1>
+        <goalsByTeam2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</goalsByTeam2>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10000</matchAttendees>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1881-03-26T00:00:00</matchDate>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1881-04-09T00:00:00</matchDate>
+        <matchName xml:lang="en">1881 Scottish Cup Final</matchName>
+        <team1Name xml:lang="en">Dumbarton F.C.</team1Name>
+        <team2Name xml:lang="en">Queen&apos;s Park F.C.</team2Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/1899_Sheriff_of_London_Charity_Shield -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/1899_Sheriff_of_London_Charity_Shield">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Aston_Villa_F.C."/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Queen&apos;s_Park_F.C."/>
+        <isHostedBy rdf:resource="http://dbpedia.org/resource/Crystal_Palace_National_Sports_Centre"/>
+        <partOfCompetition rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#1899%20Sheriff%20of%20London%20Charity%20Shield"/>
+        <goalsByTeam1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</goalsByTeam1>
+        <goalsByTeam2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</goalsByTeam2>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12000</matchAttendees>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1899-03-11T00:00:00</matchDate>
+        <matchName xml:lang="en">1899 Sheriff of London Charity Shield</matchName>
+        <team1Name xml:lang="en">Aston Villa F.C.</team1Name>
+        <team2Name xml:lang="en">Queen&apos;s Park F.C.</team2Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/1922_FA_Cup_Final -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/1922_FA_Cup_Final">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Huddersfield_Town_A.F.C."/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Preston_North_End_F.C."/>
+        <isHostedBy rdf:resource="http://dbpedia.org/resource/Stamford_Bridge_(stadium)"/>
+        <partOfCompetition rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#1922%20FA%20Cup%20Final"/>
+        <goalsByTeam1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</goalsByTeam1>
+        <goalsByTeam2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</goalsByTeam2>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">53000</matchAttendees>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1922-04-29T00:00:00</matchDate>
+        <matchName xml:lang="en">1922 FA Cup Final</matchName>
+        <team1Name xml:lang="en">Huddersfield Town A.F.C.</team1Name>
+        <team2Name xml:lang="en">Preston North End F.C.</team2Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/1927_FA_Cup_Final -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/1927_FA_Cup_Final">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Arsenal_F.C."/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Cardiff_City_F.C."/>
+        <isHostedBy rdf:resource="http://dbpedia.org/resource/Wembley_Stadium_(1923)"/>
+        <partOfCompetition rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#1927%20FA%20Cup%20Final"/>
+        <goalsByTeam1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</goalsByTeam1>
+        <goalsByTeam2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</goalsByTeam2>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">91206</matchAttendees>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1927-04-23T00:00:00</matchDate>
+        <matchName xml:lang="en">1927 FA Cup Final</matchName>
+        <team1Name xml:lang="en">Arsenal F.C.</team1Name>
+        <team2Name xml:lang="en">Cardiff City F.C.</team2Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/1928_Welsh_Cup_Final -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/1928_Welsh_Cup_Final">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Bangor_City_F.C."/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Cardiff_City_F.C."/>
+        <isHostedBy rdf:resource="http://dbpedia.org/resource/Farrar_Road_Stadium"/>
+        <partOfCompetition rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#1928%20Football%20Association%20of%20Wales%20Challenge%20Cup%20Final"/>
+        <goalsByTeam1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</goalsByTeam1>
+        <goalsByTeam2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</goalsByTeam2>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12000</matchAttendees>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1928-05-02T00:00:00</matchDate>
+        <matchName xml:lang="en">1928 Welsh Cup Final</matchName>
+        <team1Name xml:lang="en">Bangor City F.C.</team1Name>
+        <team2Name xml:lang="en">Cardiff City F.C.</team2Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/1938_FA_Charity_Shield -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/1938_FA_Charity_Shield">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Arsenal_F.C."/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Preston_North_End_F.C."/>
+        <isHostedBy rdf:resource="http://dbpedia.org/resource/Arsenal_Stadium"/>
+        <partOfCompetition rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#1938%20FA%20Charity%20Shield"/>
+        <goalsByTeam1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</goalsByTeam1>
+        <goalsByTeam2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</goalsByTeam2>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7233</matchAttendees>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1938-09-26T00:00:00</matchDate>
+        <matchName xml:lang="en">1938 FA Charity Shield</matchName>
+        <team1Name xml:lang="en">Arsenal F.C.</team1Name>
+        <team2Name xml:lang="en">Preston North End F.C.</team2Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/1938_FA_Cup_Final -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/1938_FA_Cup_Final">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Huddersfield_Town_A.F.C."/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Preston_North_End_F.C."/>
+        <isHostedBy rdf:resource="http://dbpedia.org/resource/Wembley_Stadium_(1923)"/>
+        <partOfCompetition rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#1938%20FA%20Cup%20Final"/>
+        <goalsByTeam1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</goalsByTeam1>
+        <goalsByTeam2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</goalsByTeam2>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">93497</matchAttendees>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1938-04-30T00:00:00</matchDate>
+        <matchName xml:lang="en">1938 FA Cup Final</matchName>
+        <team1Name xml:lang="en">Huddersfield Town A.F.C.</team1Name>
+        <team2Name xml:lang="en">Preston North End F.C.</team2Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/1973_IFA_Shield_Final -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/1973_IFA_Shield_Final">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/East_Bengal_Club"/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Pyongyang_Sports_Club"/>
+        <isHostedBy rdf:resource="http://dbpedia.org/resource/East_Bengal_Ground"/>
+        <partOfCompetition rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#1973%20IFA%20Shield%20Final"/>
+        <goalsByTeam1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</goalsByTeam1>
+        <goalsByTeam2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</goalsByTeam2>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30000</matchAttendees>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1973-09-27T00:00:00</matchDate>
+        <matchName xml:lang="en">1973 IFA Shield Final</matchName>
+        <team1Name xml:lang="en">East Bengal Club</team1Name>
+        <team2Name xml:lang="en">Pyongyang Sports Club</team2Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/1977_All-Ireland_Senior_Club_Hurling_Championship_Final -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/1977_All-Ireland_Senior_Club_Hurling_Championship_Final">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Camross_GAA"/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Glen_Rovers_GAA"/>
+        <isHostedBy rdf:resource="http://dbpedia.org/resource/Croke_Park"/>
+        <partOfCompetition rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#1977%20All-Ireland%20Senior%20Club%20Hurling%20Championship%20Final"/>
+        <goalsByTeam1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</goalsByTeam1>
+        <goalsByTeam2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</goalsByTeam2>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000</matchAttendees>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1977-03-27T00:00:00</matchDate>
+        <matchName xml:lang="en">1977 All-Ireland Senior Club Hurling Championship Final</matchName>
+        <team1Name xml:lang="en">Glen Rovers GAA</team1Name>
+        <team2Name xml:lang="en">Camross GAA</team2Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/1995_Football_League_Trophy_Final -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/1995_Football_League_Trophy_Final">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Birmingham_City_F.C."/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Carlisle_United_F.C."/>
+        <isHostedBy rdf:resource="http://dbpedia.org/resource/Wembley_Stadium_(1923)"/>
+        <partOfCompetition rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#1995%20Football%20League%20Trophy%20Final"/>
+        <goalsByTeam1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</goalsByTeam1>
+        <goalsByTeam2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</goalsByTeam2>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">76663</matchAttendees>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1995-04-23T00:00:00</matchDate>
+        <matchName xml:lang="en">1995 Football League Trophy Final</matchName>
+        <team1Name xml:lang="en">Birmingham City F.C.</team1Name>
+        <team2Name xml:lang="en">Carlisle United F.C.</team2Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/1997_European_Challenge_Cup_Final -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/1997_European_Challenge_Cup_Final">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/CS_Bourgoin-Jallieu"/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Castres_Olympique"/>
+        <isHostedBy rdf:resource="http://dbpedia.org/resource/Stade_de_la_Méditerranée"/>
+        <partOfCompetition rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#1997%20European%20Challenge%20Cup%20Final"/>
+        <goalsByTeam1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</goalsByTeam1>
+        <goalsByTeam2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</goalsByTeam2>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10000</matchAttendees>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1997-01-26T00:00:00</matchDate>
+        <matchName xml:lang="en">1997 European Challenge Cup Final</matchName>
+        <team1Name xml:lang="en">CS Bourgoin-Jallieu</team1Name>
+        <team2Name xml:lang="en">Castres Olympique</team2Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/2001_Football_League_First_Division_play-off_Final -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/2001_Football_League_First_Division_play-off_Final">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Bolton_Wanderers_F.C."/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Preston_North_End_F.C."/>
+        <isHostedBy rdf:resource="http://dbpedia.org/resource/Millennium_Stadium"/>
+        <partOfCompetition rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#2001%20Football%20League%20First%20Division%20play-off%20Final"/>
+        <goalsByTeam1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</goalsByTeam1>
+        <goalsByTeam2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</goalsByTeam2>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">54328</matchAttendees>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2001-05-28T00:00:00</matchDate>
+        <matchName xml:lang="en">2001 Football League First Division play-off Final</matchName>
+        <team1Name xml:lang="en">Bolton Wanderers F.C.</team1Name>
+        <team2Name xml:lang="en">Preston North End F.C.</team2Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/2002_Football_League_Trophy_Final -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/2002_Football_League_Trophy_Final">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Blackpool_F.C."/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Cambridge_United_F.C."/>
+        <isHostedBy rdf:resource="http://dbpedia.org/resource/Millennium_Stadium"/>
+        <partOfCompetition rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#2002%20Football%20League%20Trophy%20Final"/>
+        <goalsByTeam1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</goalsByTeam1>
+        <goalsByTeam2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</goalsByTeam2>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20287</matchAttendees>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2002-03-24T00:00:00</matchDate>
+        <matchName xml:lang="en">2002 Football League Trophy Final</matchName>
+        <team1Name xml:lang="en">Blackpool F.C.</team1Name>
+        <team2Name xml:lang="en">Cambridge United F.C.</team2Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/2003_Football_League_Trophy_Final -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/2003_Football_League_Trophy_Final">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Bristol_City_F.C."/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Carlisle_United_F.C."/>
+        <isHostedBy rdf:resource="http://dbpedia.org/resource/Millennium_Stadium"/>
+        <partOfCompetition rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#2003%20Football%20League%20Trophy%20Final"/>
+        <goalsByTeam1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</goalsByTeam1>
+        <goalsByTeam2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</goalsByTeam2>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50913</matchAttendees>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2003-04-06T00:00:00</matchDate>
+        <matchName xml:lang="en">2003 Football League Trophy Final</matchName>
+        <team1Name xml:lang="en">Bristol City F.C.</team1Name>
+        <team2Name xml:lang="en">Carlisle United F.C.</team2Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/2010_Football_League_Championship_play-off_Final -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/2010_Football_League_Championship_play-off_Final">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Blackpool_F.C."/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Cardiff_City_F.C."/>
+        <isHostedBy rdf:resource="http://dbpedia.org/resource/Wembley_Stadium"/>
+        <partOfCompetition rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#2010%20Football%20League%20Championship%20play-off%20Final"/>
+        <goalsByTeam1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</goalsByTeam1>
+        <goalsByTeam2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</goalsByTeam2>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">82244</matchAttendees>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-05-22T00:00:00</matchDate>
+        <matchName xml:lang="en">2010 Football League Championship play-off Final</matchName>
+        <team1Name xml:lang="en">Blackpool F.C.</team1Name>
+        <team2Name xml:lang="en">Cardiff City F.C.</team2Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/2011_Football_League_Trophy_Final -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/2011_Football_League_Trophy_Final">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Brentford_F.C."/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Carlisle_United_F.C."/>
+        <isHostedBy rdf:resource="http://dbpedia.org/resource/Wembley_Stadium"/>
+        <partOfCompetition rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#2011%20Football%20League%20Trophy%20Final"/>
+        <goalsByTeam1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</goalsByTeam1>
+        <goalsByTeam2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</goalsByTeam2>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40476</matchAttendees>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-04-03T00:00:00</matchDate>
+        <matchName xml:lang="en">2011 Football League Trophy Final</matchName>
+        <team1Name xml:lang="en">Brentford F.C.</team1Name>
+        <team2Name xml:lang="en">Carlisle United F.C.</team2Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/2012_Kuwait_Super_Cup -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/2012_Kuwait_Super_Cup">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Qadsia_SC"/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Al-Arabi_SC_(Kuwait)"/>
+        <isHostedBy rdf:resource="http://dbpedia.org/resource/Al_Kuwait_Sports_Club_Stadium"/>
+        <partOfCompetition rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#2012%20Kuwait%20Super%20Cup"/>
+        <goalsByTeam1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</goalsByTeam1>
+        <goalsByTeam2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</goalsByTeam2>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12201</matchAttendees>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-09-03T00:00:00</matchDate>
+        <matchName xml:lang="en">2012 Kuwait Super Cup</matchName>
+        <team1Name xml:lang="en">Al-Arabi SC (Kuwait)</team1Name>
+        <team2Name xml:lang="en">Qadsia SC</team2Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/2013_AFC_Cup_Final -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/2013_AFC_Cup_Final">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Kuwait_SC"/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Qadsia_SC"/>
+        <isHostedBy rdf:resource="http://dbpedia.org/resource/Al-Sadaqua_Walsalam_Stadium"/>
+        <partOfCompetition rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#2013%20AFC%20Cup%20Final"/>
+        <goalsByTeam1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</goalsByTeam1>
+        <goalsByTeam2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</goalsByTeam2>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10000</matchAttendees>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-11-02T00:00:00</matchDate>
+        <matchName xml:lang="en">2013 AFC Cup Final</matchName>
+        <team1Name xml:lang="en">Kuwait SC</team1Name>
+        <team2Name xml:lang="en">Qadsia SC</team2Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/2016_Kuwait_Super_Cup -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/2016_Kuwait_Super_Cup">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Kuwait_SC"/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Qadsia_SC"/>
+        <isHostedBy rdf:resource="http://dbpedia.org/resource/Jaber_Al-Ahmad_International_Stadium"/>
+        <partOfCompetition rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#2016%20Kuwait%20Super%20Cup"/>
+        <goalsByTeam1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</goalsByTeam1>
+        <goalsByTeam2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</goalsByTeam2>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">37329</matchAttendees>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-09-21T00:00:00</matchDate>
+        <matchName xml:lang="en">2016 Kuwait Super Cup</matchName>
+        <team1Name xml:lang="en">Kuwait SC</team1Name>
+        <team2Name xml:lang="en">Qadsia SC</team2Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/2018_Kuwait_Super_Cup -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/2018_Kuwait_Super_Cup">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Kuwait_SC"/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Qadsia_SC"/>
+        <isHostedBy rdf:resource="http://dbpedia.org/resource/Sabah_Al_Salem_Stadium"/>
+        <partOfCompetition rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#2018%20Kuwait%20Super%20Cup"/>
+        <goalsByTeam1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</goalsByTeam1>
+        <goalsByTeam2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</goalsByTeam2>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5624</matchAttendees>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-08-13T00:00:00</matchDate>
+        <matchName xml:lang="en">2018 Kuwait Super Cup</matchName>
+        <team1Name xml:lang="en">Kuwait SC</team1Name>
+        <team2Name xml:lang="en">Qadsia SC</team2Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/2019_AFC_Asian_Cup_Final -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/2019_AFC_Asian_Cup_Final">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Japan_national_football_team"/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Qatar_national_football_team"/>
+        <isHostedBy rdf:resource="http://dbpedia.org/resource/Zayed_Sports_City_Stadium"/>
+        <partOfCompetition rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#2019%20AFC%20Asian%20Cup%20Final"/>
+        <goalsByTeam1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</goalsByTeam1>
+        <goalsByTeam2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</goalsByTeam2>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">36776</matchAttendees>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-02-01T00:00:00</matchDate>
+        <matchName xml:lang="en">2019 AFC Asian Cup Final</matchName>
+        <team1Name xml:lang="en">Japan national football team</team1Name>
+        <team2Name xml:lang="en">Qatar national football team</team2Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/2019_Kuwait_Super_Cup -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/2019_Kuwait_Super_Cup">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Kuwait_SC"/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Qadsia_SC"/>
+        <isHostedBy rdf:resource="http://dbpedia.org/resource/Jaber_Al-Ahmad_International_Stadium"/>
+        <partOfCompetition rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#2019%20Kuwait%20Super%20Cup"/>
+        <goalsByTeam1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</goalsByTeam1>
+        <goalsByTeam2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</goalsByTeam2>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5624</matchAttendees>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-12-12T00:00:00</matchDate>
+        <matchName xml:lang="en">2019 Kuwait Super Cup</matchName>
+        <team1Name xml:lang="en">Kuwait SC</team1Name>
+        <team2Name xml:lang="en">Qadsia SC</team2Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Al-Arabi_SC_(Kuwait) -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Al-Arabi_SC_(Kuwait)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Cardiff_Blues_vs_Leicester_Tigers_(2008–09_Heineken_Cup) -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Cardiff_Blues_vs_Leicester_Tigers_(2008–09_Heineken_Cup)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Cardiff_Blues"/>
+        <involvesTeam rdf:resource="http://dbpedia.org/resource/Leicester_Tigers"/>
+        <isHostedBy rdf:resource="http://dbpedia.org/resource/Millennium_Stadium"/>
+        <partOfCompetition rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Cardiff%20Blues%20vs%20Leicester%20Tigers"/>
+        <goalsByTeam1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</goalsByTeam1>
+        <goalsByTeam2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</goalsByTeam2>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44212</matchAttendees>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-05-03T00:00:00</matchDate>
+        <matchName xml:lang="en">Cardiff Blues vs Leicester Tigers (2008–09 Heineken Cup)</matchName>
+        <team1Name xml:lang="en">Leicester Tigers</team1Name>
+        <team2Name xml:lang="en">Cardiff Blues</team2Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Hampden_Park_(1873–1883) -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Hampden_Park_(1873–1883)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumName xml:lang="en">Hampden Park (1873–1883)</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Kinning_Park_(sports_ground) -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Kinning_Park_(sports_ground)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumName xml:lang="en">Kinning Park (sports ground)</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Queen&apos;s_Park_F.C. -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Queen&apos;s_Park_F.C.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Stamford_Bridge_(stadium) -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Stamford_Bridge_(stadium)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">40341</stadiumCapacity>
+        <stadiumName xml:lang="en">Stamford Bridge (stadium)</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Wembley_Stadium_(1923) -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Wembley_Stadium_(1923)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">100000</stadiumCapacity>
+        <stadiumName xml:lang="en">Wembley Stadium (1923)</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#AC_Milan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#AC_Milan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#AS_Roma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#AS_Roma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Allianz_Arena -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Allianz_Arena">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75000</stadiumCapacity>
+        <stadiumName>Allianz Arena</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Anfield -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Anfield">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">54000</stadiumCapacity>
+        <stadiumName>Anfield</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Arsenal_FC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Arsenal_FC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Atletico_Madrid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Atletico_Madrid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Banc_of_California_Stadium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Banc_of_California_Stadium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22000</stadiumCapacity>
+        <stadiumName>Banc of California Stadium</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Bayern_Munich -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Bayern_Munich">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Borussia_Dortmund -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Borussia_Dortmund">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Bundesliga -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Bundesliga">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName>Bundesliga</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Bundesliga_2023_Bayern_Munich_vs_Borussia_Dortmund -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Bundesliga_2023_Bayern_Munich_vs_Borussia_Dortmund">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <involvesTeam rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Bayern_Munich"/>
+        <involvesTeam rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Borussia_Dortmund"/>
+        <isHostedBy rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Allianz_Arena"/>
+        <partOfCompetition rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Bundesliga"/>
+        <goalsByTeam1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</goalsByTeam1>
+        <goalsByTeam2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</goalsByTeam2>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75000</matchAttendees>
+        <matchClass>Men&apos;s</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-09T17:00:00+00:00</matchDate>
+        <matchName>Bundesliga 2023_Bayern Munich vs Borussia Dortmund</matchName>
+        <team1Name>Bayern Munich</team1Name>
+        <team2Name>Borussia Dortmund</team2Name>
+        <winnerTeam>Borussia Dortmund</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Camp_Nou -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Camp_Nou">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">99354</stadiumCapacity>
+        <stadiumName>Camp Nou</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Champions_League_2023_FC_Barcelona_vs_Real_Madrid_CF -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Champions_League_2023_FC_Barcelona_vs_Real_Madrid_CF">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <involvesTeam rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#FC_Barcelona"/>
+        <involvesTeam rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Real_Madrid_CF"/>
+        <isHostedBy rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Camp_Nou"/>
+        <partOfCompetition rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#UEFA_Champions_League"/>
+        <goalsByTeam1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</goalsByTeam1>
+        <goalsByTeam2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</goalsByTeam2>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">99354</matchAttendees>
+        <matchClass>Men&apos;s</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-06T19:45:00+00:00</matchDate>
+        <matchName>Champions League 2023_FC Barcelona vs Real Madrid CF</matchName>
+        <team1Name>FC Barcelona</team1Name>
+        <team2Name>Real Madrid CF</team2Name>
+        <winnerTeam>Draw</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Chelsea_FC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Chelsea_FC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Etihad_Stadium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Etihad_Stadium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55000</stadiumCapacity>
+        <stadiumName>Etihad Stadium</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#FC_Barcelona -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#FC_Barcelona">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Juventus_FC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Juventus_FC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#LA_Galaxy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#LA_Galaxy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#La_Liga -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#La_Liga">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName>La Liga</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#La_Liga_2023_Real_Madrid_CF_vs_Atletico_Madrid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#La_Liga_2023_Real_Madrid_CF_vs_Atletico_Madrid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <involvesTeam rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Atletico_Madrid"/>
+        <involvesTeam rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Real_Madrid_CF"/>
+        <isHostedBy rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Santiago_Bernabeu"/>
+        <partOfCompetition rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#La_Liga"/>
+        <goalsByTeam1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</goalsByTeam1>
+        <goalsByTeam2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</goalsByTeam2>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">81044</matchAttendees>
+        <matchClass>Men&apos;s</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-10T16:00:00+00:00</matchDate>
+        <matchName>La Liga 2023_Real Madrid CF vs Atletico Madrid</matchName>
+        <team1Name>Real Madrid CF</team1Name>
+        <team2Name>Atletico Madrid</team2Name>
+        <winnerTeam>Draw</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Ligue_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Ligue_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName>Ligue 1</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Ligue_1_2023_Paris_Saint-Germain_vs_Lyon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Ligue_1_2023_Paris_Saint-Germain_vs_Lyon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <involvesTeam rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Lyon"/>
+        <involvesTeam rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Paris_Saint-Germain"/>
+        <isHostedBy rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Parc_des_Princes"/>
+        <partOfCompetition rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Ligue_1"/>
+        <goalsByTeam1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</goalsByTeam1>
+        <goalsByTeam2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</goalsByTeam2>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">48000</matchAttendees>
+        <matchClass>Men&apos;s</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-11T15:00:00+00:00</matchDate>
+        <matchName>Ligue 1 2023_Paris Saint-Germain vs Lyon</matchName>
+        <team1Name>Paris Saint-Germain</team1Name>
+        <team2Name>Lyon</team2Name>
+        <winnerTeam>Paris Saint-Germain</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Liverpool_FC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Liverpool_FC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Los_Angeles_FC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Los_Angeles_FC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Lyon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Lyon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#MLS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#MLS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName>MLS</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#MLS_2023_Los_Angeles_FC_vs_LA_Galaxy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#MLS_2023_Los_Angeles_FC_vs_LA_Galaxy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <involvesTeam rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#LA_Galaxy"/>
+        <involvesTeam rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Los_Angeles_FC"/>
+        <isHostedBy rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Banc_of_California_Stadium"/>
+        <partOfCompetition rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#MLS"/>
+        <goalsByTeam1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</goalsByTeam1>
+        <goalsByTeam2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</goalsByTeam2>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22000</matchAttendees>
+        <matchClass>Men&apos;s</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-12T14:00:00+00:00</matchDate>
+        <matchName>MLS 2023_Los Angeles FC vs LA Galaxy</matchName>
+        <team1Name>Los Angeles FC</team1Name>
+        <team2Name>LA Galaxy</team2Name>
+        <winnerTeam>Draw</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Manchester_City_FC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Manchester_City_FC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Manchester_United_FC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Manchester_United_FC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Old_Trafford -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Old_Trafford">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">76000</stadiumCapacity>
+        <stadiumName>Old Trafford</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Parc_des_Princes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Parc_des_Princes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">48000</stadiumCapacity>
+        <stadiumName>Parc des Princes</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Paris_Saint-Germain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Paris_Saint-Germain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Premier_League -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Premier_League">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName>Premier League</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Premier_League_2023_Liverpool_FC_vs_Manchester_City_FC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Premier_League_2023_Liverpool_FC_vs_Manchester_City_FC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <involvesTeam rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Liverpool_FC"/>
+        <involvesTeam rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Manchester_City_FC"/>
+        <isHostedBy rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Anfield"/>
+        <partOfCompetition rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Premier_League"/>
+        <goalsByTeam1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</goalsByTeam1>
+        <goalsByTeam2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</goalsByTeam2>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">53000</matchAttendees>
+        <matchClass>Men&apos;s</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-05T20:00:00+00:00</matchDate>
+        <matchName>Premier League 2023_Liverpool FC vs Manchester City FC</matchName>
+        <team1Name>Liverpool FC</team1Name>
+        <team2Name>Manchester City FC</team2Name>
+        <winnerTeam>Liverpool FC</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Premier_League_2023_Manchester_City_FC_vs_Arsenal_FC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Premier_League_2023_Manchester_City_FC_vs_Arsenal_FC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <involvesTeam rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Arsenal_FC"/>
+        <involvesTeam rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Manchester_City_FC"/>
+        <isHostedBy rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Etihad_Stadium"/>
+        <partOfCompetition rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Premier_League"/>
+        <goalsByTeam1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</goalsByTeam1>
+        <goalsByTeam2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</goalsByTeam2>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55097</matchAttendees>
+        <matchClass>Men&apos;s</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-13T13:00:00+00:00</matchDate>
+        <matchName>Premier League 2023_Manchester City FC vs Arsenal FC</matchName>
+        <team1Name>Manchester City FC</team1Name>
+        <team2Name>Arsenal FC</team2Name>
+        <winnerTeam>Manchester City FC</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Premier_League_2023_Manchester_United_FC_vs_Chelsea_FC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Premier_League_2023_Manchester_United_FC_vs_Chelsea_FC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <involvesTeam rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Chelsea_FC"/>
+        <involvesTeam rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Manchester_United_FC"/>
+        <isHostedBy rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Old_Trafford"/>
+        <partOfCompetition rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Premier_League"/>
+        <goalsByTeam1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</goalsByTeam1>
+        <goalsByTeam2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</goalsByTeam2>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">76000</matchAttendees>
+        <matchClass>Men&apos;s</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-07T21:00:00+00:00</matchDate>
+        <matchName>Premier League 2023_Manchester United FC vs Chelsea FC</matchName>
+        <team1Name>Manchester United FC</team1Name>
+        <team2Name>Chelsea FC</team2Name>
+        <winnerTeam>Draw</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Real_Madrid_CF -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Real_Madrid_CF">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#SSC_Napoli -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#SSC_Napoli">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#San_Siro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#San_Siro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80000</stadiumCapacity>
+        <stadiumName>San Siro</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Santiago_Bernabeu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Santiago_Bernabeu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">81044</stadiumCapacity>
+        <stadiumName>Santiago Bernabeu</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Serie_A -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Serie_A">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName>Serie A</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Serie_A_2023_AC_Milan_vs_Juventus_FC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Serie_A_2023_AC_Milan_vs_Juventus_FC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <involvesTeam rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#AC_Milan"/>
+        <involvesTeam rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Juventus_FC"/>
+        <isHostedBy rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#San_Siro"/>
+        <partOfCompetition rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Serie_A"/>
+        <goalsByTeam1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</goalsByTeam1>
+        <goalsByTeam2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</goalsByTeam2>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80018</matchAttendees>
+        <matchClass>Men&apos;s</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-08T18:30:00+00:00</matchDate>
+        <matchName>Serie A 2023_AC Milan vs Juventus FC</matchName>
+        <team1Name>AC Milan</team1Name>
+        <team2Name>Juventus FC</team2Name>
+        <winnerTeam>Juventus FC</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Serie_A_2023_AS_Roma_vs_SSC_Napoli -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Serie_A_2023_AS_Roma_vs_SSC_Napoli">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <involvesTeam rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#AS_Roma"/>
+        <involvesTeam rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#SSC_Napoli"/>
+        <isHostedBy rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadio_Olimpico"/>
+        <partOfCompetition rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Serie_A"/>
+        <goalsByTeam1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</goalsByTeam1>
+        <goalsByTeam2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</goalsByTeam2>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70634</matchAttendees>
+        <matchClass>Men&apos;s</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-14T12:00:00+00:00</matchDate>
+        <matchName>Serie A 2023_AS Roma vs SSC Napoli</matchName>
+        <team1Name>AS Roma</team1Name>
+        <team2Name>SSC Napoli</team2Name>
+        <winnerTeam>SSC Napoli</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadio_Olimpico -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadio_Olimpico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70634</stadiumCapacity>
+        <stadiumName>Stadio Olimpico</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#UEFA_Champions_League -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#UEFA_Champions_League">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName>UEFA Champions League</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#1874%20Scottish%20Cup%20Final -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#1874%20Scottish%20Cup%20Final">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">1874 Scottish Cup Final</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#1881%20Scottish%20Cup%20Final -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#1881%20Scottish%20Cup%20Final">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">1881 Scottish Cup Final</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#1899%20Sheriff%20of%20London%20Charity%20Shield -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#1899%20Sheriff%20of%20London%20Charity%20Shield">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">1899 Sheriff of London Charity Shield</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#1922%20FA%20Cup%20Final -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#1922%20FA%20Cup%20Final">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">1922 FA Cup Final</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#1927%20FA%20Cup%20Final -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#1927%20FA%20Cup%20Final">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">1927 FA Cup Final</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#1928%20Football%20Association%20of%20Wales%20Challenge%20Cup%20Final -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#1928%20Football%20Association%20of%20Wales%20Challenge%20Cup%20Final">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">1928 Football Association of Wales Challenge Cup Final</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#1938%20FA%20Charity%20Shield -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#1938%20FA%20Charity%20Shield">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">1938 FA Charity Shield</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#1938%20FA%20Cup%20Final -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#1938%20FA%20Cup%20Final">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">1938 FA Cup Final</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#1973%20IFA%20Shield%20Final -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#1973%20IFA%20Shield%20Final">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">1973 IFA Shield Final</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#1977%20All-Ireland%20Senior%20Club%20Hurling%20Championship%20Final -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#1977%20All-Ireland%20Senior%20Club%20Hurling%20Championship%20Final">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">1977 All-Ireland Senior Club Hurling Championship Final</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#1995%20Football%20League%20Trophy%20Final -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#1995%20Football%20League%20Trophy%20Final">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">1995 Football League Trophy Final</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#1997%20European%20Challenge%20Cup%20Final -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#1997%20European%20Challenge%20Cup%20Final">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">1997 European Challenge Cup Final</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#2001%20Football%20League%20First%20Division%20play-off%20Final -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#2001%20Football%20League%20First%20Division%20play-off%20Final">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">2001 Football League First Division play-off Final</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#2002%20Football%20League%20Trophy%20Final -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#2002%20Football%20League%20Trophy%20Final">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">2002 Football League Trophy Final</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#2003%20Football%20League%20Trophy%20Final -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#2003%20Football%20League%20Trophy%20Final">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">2003 Football League Trophy Final</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#2010%20Football%20League%20Championship%20play-off%20Final -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#2010%20Football%20League%20Championship%20play-off%20Final">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">2010 Football League Championship play-off Final</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#2011%20Football%20League%20Trophy%20Final -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#2011%20Football%20League%20Trophy%20Final">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">2011 Football League Trophy Final</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#2012%20Kuwait%20Super%20Cup -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#2012%20Kuwait%20Super%20Cup">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">2012 Kuwait Super Cup</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#2013%20AFC%20Cup%20Final -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#2013%20AFC%20Cup%20Final">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">2013 AFC Cup Final</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#2016%20Kuwait%20Super%20Cup -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#2016%20Kuwait%20Super%20Cup">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">2016 Kuwait Super Cup</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#2018%20Kuwait%20Super%20Cup -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#2018%20Kuwait%20Super%20Cup">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">2018 Kuwait Super Cup</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#2019%20AFC%20Asian%20Cup%20Final -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#2019%20AFC%20Asian%20Cup%20Final">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">2019 AFC Asian Cup Final</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#2019%20Kuwait%20Super%20Cup -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#2019%20Kuwait%20Super%20Cup">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">2019 Kuwait Super Cup</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Cardiff%20Blues%20vs%20Leicester%20Tigers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Cardiff%20Blues%20vs%20Leicester%20Tigers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">Cardiff Blues vs Leicester Tigers</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q101730 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q101730">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">1998 FIFA World Cup</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q101751 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q101751">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">1994 FIFA World Cup</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q102920 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q102920">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">UEFA Euro 2004</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1062157 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1062157">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">60000</stadiumCapacity>
+        <stadiumName xml:lang="es">Estadio Mario Alberto Kempes</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q115698838 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q115698838">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">France national association football team match</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1204914 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1204914">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">1994 FIFA World Cup qualification (UEFA)</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q131075 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q131075">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">1954 FIFA World Cup</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q13205 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q13205">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">81338</stadiumCapacity>
+        <stadiumName xml:lang="fr">Stade de France</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q132533 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q132533">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">1958 FIFA World Cup</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q132664 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q132664">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">1970 FIFA World Cup</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1463023 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1463023">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">list of Germany international football games</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q150928 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q150928">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">81359</stadiumCapacity>
+        <stadiumName xml:lang="de">Signal Iduna Park</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q151374 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q151374">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">74475</stadiumCapacity>
+        <stadiumName xml:lang="de">Olympiastadion Berlin</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q151893 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q151893">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">46195</stadiumCapacity>
+        <stadiumName xml:lang="de">Rheinenergiestadion</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q160813 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q160813">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">1962 FIFA World Cup</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q163521 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q163521">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">94736</stadiumCapacity>
+        <stadiumName xml:lang="en">Soccer City Stadium</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q166551 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q166551">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">1997 FIFA Confederations Cup</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q176883 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q176883">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">2010 FIFA World Cup</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q180701 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q180701">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">UEFA Euro 2012 qualifying</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q181439 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q181439">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">45158</stadiumCapacity>
+        <stadiumName xml:lang="af">Free State Stadium</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q182770 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q182770">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">UEFA Euro 1984</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q193431 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q193431">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">47929</stadiumCapacity>
+        <stadiumName xml:lang="fr">Parc des Princes</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q207109 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q207109">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">54990</stadiumCapacity>
+        <stadiumName xml:lang="nl">Johan Cruijff ArenA</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q208401 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q208401">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <isHostedBy rdf:resource="http://www.wikidata.org/entity/Q163521"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q176883"/>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">84490</matchAttendees>
+        <matchClass xml:lang="en">men&apos;s association football</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-07-11T00:00:00+00:00</matchDate>
+        <matchName xml:lang="en">2010 FIFA World Cup Final</matchName>
+        <winnerTeam xml:lang="en">Spain national association football team</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q210466 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q210466">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">42000</stadiumCapacity>
+        <stadiumName xml:lang="de">Red Bull Arena</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q211814 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q211814">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">2010 FIFA World Cup qualification (UEFA)</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2299095 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2299095">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <isHostedBy rdf:resource="http://www.wikidata.org/entity/Q150928"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q37285"/>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">65000</matchAttendees>
+        <matchClass xml:lang="en">men&apos;s association football</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2006-06-22T00:00:00+00:00</matchDate>
+        <matchName xml:lang="en">2006 FIFA World Cup Match 43</matchName>
+        <winnerTeam xml:lang="en">Brazil national football team</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2332300 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2332300">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <isHostedBy rdf:resource="http://www.wikidata.org/entity/Q151893"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q115698838"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q37285"/>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">45000</matchAttendees>
+        <matchClass xml:lang="en">men&apos;s association football</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2006-06-23T00:00:00+00:00</matchDate>
+        <matchName xml:lang="en">2006 FIFA World Cup Match 45</matchName>
+        <winnerTeam xml:lang="en">France national association football team</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2390875 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2390875">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <isHostedBy rdf:resource="http://www.wikidata.org/entity/Q150928"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q1463023"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q37285"/>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">65000</matchAttendees>
+        <matchClass xml:lang="en">men&apos;s association football</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2006-06-14T00:00:00+00:00</matchDate>
+        <matchName xml:lang="en">2006 FIFA World Cup Match 17</matchName>
+        <winnerTeam xml:lang="en">Germany national association football team</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2415292 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2415292">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <isHostedBy rdf:resource="http://www.wikidata.org/entity/Q151893"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q37285"/>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">45000</matchAttendees>
+        <matchClass xml:lang="en">men&apos;s association football</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2006-06-26T00:00:00+00:00</matchDate>
+        <matchName xml:lang="en">2006 FIFA World Cup Match 54</matchName>
+        <winnerTeam xml:lang="en">Ukraine national association football team</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2459340 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2459340">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <isHostedBy rdf:resource="http://www.wikidata.org/entity/Q210466"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q37285"/>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">43000</matchAttendees>
+        <matchClass xml:lang="en">men&apos;s association football</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2006-06-24T00:00:00+00:00</matchDate>
+        <matchName xml:lang="en">2006 FIFA World Cup Match 50</matchName>
+        <winnerTeam xml:lang="en">Argentina national association football team</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2497321 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2497321">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <isHostedBy rdf:resource="http://www.wikidata.org/entity/Q210466"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q37285"/>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">43000</matchAttendees>
+        <matchClass xml:lang="en">men&apos;s association football</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2006-06-14T00:00:00+00:00</matchDate>
+        <matchName xml:lang="en">Football World Cup 2006 Spain - Ukraine</matchName>
+        <winnerTeam xml:lang="en">Spain national association football team</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2610314 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2610314">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <isHostedBy rdf:resource="http://www.wikidata.org/entity/Q150928"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q37285"/>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">65000</matchAttendees>
+        <matchClass xml:lang="en">men&apos;s association football</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2006-06-27T00:00:00+00:00</matchDate>
+        <matchName xml:lang="en">2006 FIFA World Cup Match 55</matchName>
+        <winnerTeam xml:lang="en">Brazil national football team</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2646007 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2646007">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <isHostedBy rdf:resource="http://www.wikidata.org/entity/Q151893"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q37285"/>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">45000</matchAttendees>
+        <matchClass xml:lang="en">men&apos;s association football</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2006-06-17T00:00:00+00:00</matchDate>
+        <matchName xml:lang="en">2006 FIFA World Cup Match 26</matchName>
+        <winnerTeam xml:lang="en">Ghana national football team</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2696047 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2696047">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <isHostedBy rdf:resource="http://www.wikidata.org/entity/Q151374"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q1463023"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q37285"/>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">72000</matchAttendees>
+        <matchClass xml:lang="en">men&apos;s association football</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2006-06-30T00:00:00+00:00</matchDate>
+        <matchName xml:lang="en">2006 FIFA World Cup Match 57</matchName>
+        <winnerTeam xml:lang="en">Germany national association football team</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2858820 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2858820">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <isHostedBy rdf:resource="http://www.wikidata.org/entity/Q151374"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q1463023"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q37285"/>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">72000</matchAttendees>
+        <matchClass xml:lang="en">men&apos;s association football</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2006-06-20T00:00:00+00:00</matchDate>
+        <matchName xml:lang="en">2006 FIFA World Cup Match 33</matchName>
+        <winnerTeam xml:lang="en">Germany national association football team</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q286552 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q286552">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <isHostedBy rdf:resource="http://www.wikidata.org/entity/Q763077"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q166551"/>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">65000</matchAttendees>
+        <matchClass xml:lang="en">men&apos;s association football</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1997-12-21T00:00:00+00:00</matchDate>
+        <matchName xml:lang="en">1997 FIFA Confederations Cup Final</matchName>
+        <winnerTeam xml:lang="en">Brazil national football team</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q303498 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q303498">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <isHostedBy rdf:resource="http://www.wikidata.org/entity/Q763077"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q505637"/>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">35000</matchAttendees>
+        <matchClass xml:lang="en">men&apos;s association football</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1995-01-13T00:00:00+00:00</matchDate>
+        <matchName xml:lang="en">1995 King Fahd Cup Final</matchName>
+        <winnerTeam xml:lang="en">Denmark national association football team</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q3077917 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q3077917">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <isHostedBy rdf:resource="http://www.wikidata.org/entity/Q151374"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q37285"/>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">72000</matchAttendees>
+        <matchClass xml:lang="en">men&apos;s association football</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2006-06-15T00:00:00+00:00</matchDate>
+        <matchName xml:lang="en">2006 FIFA World Cup Match 20</matchName>
+        <winnerTeam xml:lang="en">Sweden national association football team</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q320454 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q320454">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">115000</stadiumCapacity>
+        <stadiumName xml:lang="es">Estadio Azteca</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q3225446 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q3225446">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <isHostedBy rdf:resource="http://www.wikidata.org/entity/Q163521"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q176883"/>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">83465</matchAttendees>
+        <matchClass xml:lang="en">men&apos;s association football</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-06-14T00:00:00+00:00</matchDate>
+        <matchName xml:lang="en">2010 FIFA World Cup Match 9</matchName>
+        <winnerTeam xml:lang="en">Netherlands national association football team</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q3225892 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q3225892">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <isHostedBy rdf:resource="http://www.wikidata.org/entity/Q181439"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q176883"/>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30620</matchAttendees>
+        <matchClass xml:lang="en">men&apos;s association football</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-06-14T00:00:00+00:00</matchDate>
+        <matchName xml:lang="en">2010 FIFA World Cup Match 10</matchName>
+        <winnerTeam xml:lang="en">Japan national football team</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q3298258 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q3298258">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <isHostedBy rdf:resource="http://www.wikidata.org/entity/Q725623"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q115698838"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q132533"/>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">27100</matchAttendees>
+        <matchClass xml:lang="en">men&apos;s association football</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1958-06-24T00:00:00+00:00</matchDate>
+        <matchName xml:lang="en">1958 FIFA World Cup Match 29</matchName>
+        <winnerTeam xml:lang="en">Brazil national football team</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q3298261 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q3298261">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <isHostedBy rdf:resource="http://www.wikidata.org/entity/Q193431"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q115698838"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q1204914"/>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">48402</matchAttendees>
+        <matchClass xml:lang="en">men&apos;s association football</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1993-11-17T00:00:00+00:00</matchDate>
+        <matchName xml:lang="en">France v Bulgaria</matchName>
+        <winnerTeam xml:lang="en">Bulgaria national football team</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q3298263 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q3298263">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <isHostedBy rdf:resource="http://www.wikidata.org/entity/Q13205"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q101730"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q115698838"/>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">76000</matchAttendees>
+        <matchClass xml:lang="en">men&apos;s association football</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1998-07-08T00:00:00+00:00</matchDate>
+        <matchName xml:lang="en">soccer match France - Croatia</matchName>
+        <winnerTeam xml:lang="en">France national association football team</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q3298264 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q3298264">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <isHostedBy rdf:resource="http://www.wikidata.org/entity/Q13205"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q101730"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q115698838"/>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">77000</matchAttendees>
+        <matchClass xml:lang="en">men&apos;s association football</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1998-07-03T00:00:00+00:00</matchDate>
+        <matchName xml:lang="en">1998 FIFA World Cup Match 57</matchName>
+        <winnerTeam xml:lang="en">France national association football team</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q33003 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q33003">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">38065</stadiumCapacity>
+        <stadiumName xml:lang="da">Parken</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q37285 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q37285">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">2006 FIFA World Cup</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q389104 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q389104">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <isHostedBy rdf:resource="http://www.wikidata.org/entity/Q582280"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q101751"/>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">94194</matchAttendees>
+        <matchClass xml:lang="en">men&apos;s association football</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1994-07-17T00:00:00+00:00</matchDate>
+        <matchName xml:lang="en">1994 FIFA World Cup Final</matchName>
+        <winnerTeam xml:lang="en">Brazil national football team</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q451175 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q451175">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <isHostedBy rdf:resource="http://www.wikidata.org/entity/Q1062157"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q1463023"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q46943"/>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">38318</matchAttendees>
+        <matchClass xml:lang="en">men&apos;s association football</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1978-06-21T00:00:00+00:00</matchDate>
+        <matchName xml:lang="en">Miracle of Cordoba</matchName>
+        <winnerTeam xml:lang="en">Austria national association football team</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q469051 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q469051">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <isHostedBy rdf:resource="http://www.wikidata.org/entity/Q7875112"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q211814"/>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50115</matchAttendees>
+        <matchClass xml:lang="en">men&apos;s association football</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-10-10T00:00:00+00:00</matchDate>
+        <matchName xml:lang="en">Portugal v Hungary</matchName>
+        <winnerTeam xml:lang="en">Portugal national association football team</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q469052 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q469052">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <isHostedBy rdf:resource="http://www.wikidata.org/entity/Q33003"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q211814"/>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">36956</matchAttendees>
+        <matchClass xml:lang="en">men&apos;s association football</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-10-14T00:00:00+00:00</matchDate>
+        <matchName xml:lang="en">Denmark v Hungary</matchName>
+        <winnerTeam xml:lang="en">Hungary national association football team</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q469112 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q469112">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <isHostedBy rdf:resource="http://www.wikidata.org/entity/Q725623"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q180701"/>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">32304</matchAttendees>
+        <matchClass xml:lang="en">men&apos;s association football</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-03T00:00:00+00:00</matchDate>
+        <matchName xml:lang="en">Sweden v Hungary</matchName>
+        <winnerTeam xml:lang="en">Sweden national association football team</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q469122 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q469122">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <isHostedBy rdf:resource="http://www.wikidata.org/entity/Q207109"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q180701"/>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">51000</matchAttendees>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">51774</matchAttendees>
+        <matchClass xml:lang="en">men&apos;s association football</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-03-29T00:00:00+00:00</matchDate>
+        <matchName xml:lang="en">Netherlands v Hungary</matchName>
+        <winnerTeam xml:lang="en">Netherlands national association football team</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q46938 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q46938">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">1986 FIFA World Cup</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q46943 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q46943">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">1978 FIFA World Cup</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q48432 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q48432">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">1930 FIFA World Cup</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q498245 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q498245">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">60235</stadiumCapacity>
+        <stadiumName xml:lang="es">Estadio Centenario</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q505637 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q505637">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Competition"/>
+        <competitionName xml:lang="en">1995 King Fahd Cup</competitionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q509347 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q509347">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <isHostedBy rdf:resource="http://www.wikidata.org/entity/Q7875112"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q102920"/>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">62865</matchAttendees>
+        <matchClass xml:lang="en">men&apos;s association football</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-07-04T00:00:00+00:00</matchDate>
+        <matchName xml:lang="en">UEFA Euro 2004 Final</matchName>
+        <winnerTeam xml:lang="en">Greece national football team</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q516025 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q516025">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <isHostedBy rdf:resource="http://www.wikidata.org/entity/Q320454"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q132664"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q1463023"/>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">102444</matchAttendees>
+        <matchClass xml:lang="en">men&apos;s association football</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1970-06-17T00:00:00+00:00</matchDate>
+        <matchName xml:lang="en">Italy 4–3 West Germany</matchName>
+        <winnerTeam xml:lang="en">Italy national association football team</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q525354 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q525354">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <isHostedBy rdf:resource="http://www.wikidata.org/entity/Q668606"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q131075"/>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">35</matchAttendees>
+        <matchClass xml:lang="en">men&apos;s association football</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1954-06-26T00:00:00+00:00</matchDate>
+        <matchName xml:lang="en">Austria v Switzerland (1954)</matchName>
+        <winnerTeam xml:lang="en">Austria national association football team</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q582280 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q582280">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">92542</stadiumCapacity>
+        <stadiumName xml:lang="en">Rose Bowl</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q585295 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q585295">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <isHostedBy rdf:resource="http://www.wikidata.org/entity/Q13205"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q101730"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q115698838"/>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">80000</matchAttendees>
+        <matchClass xml:lang="en">men&apos;s association football</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1998-01-01T00:00:00+00:00</matchDate>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1998-07-12T00:00:00+00:00</matchDate>
+        <matchName xml:lang="en">1998 FIFA World Cup Final</matchName>
+        <winnerTeam xml:lang="en">France national association football team</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q586385 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q586385">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <isHostedBy rdf:resource="http://www.wikidata.org/entity/Q594994"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q160813"/>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">66057</matchAttendees>
+        <matchClass xml:lang="en">men&apos;s association football</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1962-06-02T00:00:00+00:00</matchDate>
+        <matchName xml:lang="en">Battle of Santiago</matchName>
+        <winnerTeam xml:lang="en">Chile national football team</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q594994 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q594994">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">48665</stadiumCapacity>
+        <stadiumName xml:lang="es">Estadio Nacional Julio Martínez Prádanos</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q610156 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q610156">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <isHostedBy rdf:resource="http://www.wikidata.org/entity/Q320454"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q1463023"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q46938"/>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">114600</matchAttendees>
+        <matchClass xml:lang="en">men&apos;s association football</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1986-06-29T00:00:00+00:00</matchDate>
+        <matchName xml:lang="en">1986 FIFA World Cup Final</matchName>
+        <winnerTeam xml:lang="en">Argentina national association football team</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q63843 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q63843">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <isHostedBy rdf:resource="http://www.wikidata.org/entity/Q498245"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q48432"/>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">68346</matchAttendees>
+        <matchClass xml:lang="en">men&apos;s association football</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1930-07-30T00:00:00+00:00</matchDate>
+        <matchName xml:lang="en">1930 FIFA World Cup Final</matchName>
+        <winnerTeam xml:lang="en">Uruguay national football team</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q64179 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q64179">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+        <isHostedBy rdf:resource="http://www.wikidata.org/entity/Q193431"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q115698838"/>
+        <partOfCompetition rdf:resource="http://www.wikidata.org/entity/Q182770"/>
+        <matchAttendees rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">47368</matchAttendees>
+        <matchClass xml:lang="en">men&apos;s association football</matchClass>
+        <matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1984-06-27T00:00:00+00:00</matchDate>
+        <matchName xml:lang="en">UEFA Euro 1984 Final</matchName>
+        <winnerTeam xml:lang="en">France national association football team</winnerTeam>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q668606 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q668606">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50000</stadiumCapacity>
+        <stadiumName xml:lang="fr">Stade Olympique de la Pontaise</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q725623 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q725623">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">36608</stadiumCapacity>
+        <stadiumName xml:lang="sv">Råsunda</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q763077 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q763077">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">92000</stadiumCapacity>
+        <stadiumName xml:lang="ar">مدينة الملك فهد الرياضية</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q7875112 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q7875112">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+        <stadiumCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">64642</stadiumCapacity>
+        <stadiumName xml:lang="pt">Estádio da Luz</stadiumName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/m">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/score1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/s">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/amannaredi/ontologies/2024/3/c">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>HighScoringMatch_Team1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/m"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#goalsByTeam1"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/m"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/score1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/score1"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#HighScoringMatch"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/m"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>HighScoringMatch_Team2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/m"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#goalsByTeam2"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/m"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/score1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/score1"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#HighScoringMatch"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/m"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>PopularMatch</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Match"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/m"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#matchAttendees"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/s"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/c"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/c"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50000</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#PopularMatch"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>LargeStadium</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#Stadium"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#stadiumCapacity"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/s"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/c"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/c"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50000</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/footballMatch#BigStadium"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/amannaredi/ontologies/2024/3/s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

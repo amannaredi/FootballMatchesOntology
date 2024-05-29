@@ -1,0 +1,11 @@
+MatchDate,goalsByTeam1,goalsByTeam2,matchAttendees,team1Name,team2Name,stadiumName,competitionName,matchName,matchClass,stadiumCapacity,winningTeam
+2023-04-05T20:00:00Z,3,1,53000,Liverpool FC,Manchester City FC,Anfield,Premier League,Premier League 2023_Liverpool FC vs Manchester City FC,Men's,54000,Liverpool FC
+2023-04-06T19:45:00Z,2,2,99354,FC Barcelona,Real Madrid CF,Camp Nou,UEFA Champions League,Champions League 2023_FC Barcelona vs Real Madrid CF,Men's,99354,Draw
+2023-04-07T21:00:00Z,0,0,76000,Manchester United FC,Chelsea FC,Old Trafford,Premier League,Premier League 2023_Manchester United FC vs Chelsea FC,Men's,76000,Draw
+2023-04-08T18:30:00Z,2,3,80018,AC Milan,Juventus FC,San Siro,Serie A,Serie A 2023_AC Milan vs Juventus FC,Men's,80000,Juventus FC
+2023-04-09T17:00:00Z,1,3,75000,Bayern Munich,Borussia Dortmund,Allianz Arena,Bundesliga,Bundesliga 2023_Bayern Munich vs Borussia Dortmund,Men's,75000,Borussia Dortmund
+2023-04-10T16:00:00Z,1,1,81044,Real Madrid CF,Atletico Madrid,Santiago Bernabeu,La Liga,La Liga 2023_Real Madrid CF vs Atletico Madrid,Men's,81044,Draw
+2023-04-11T15:00:00Z,4,0,48000,Paris Saint-Germain,Lyon,Parc des Princes,Ligue 1,Ligue 1 2023_Paris Saint-Germain vs Lyon,Men's,48000,Paris Saint-Germain
+2023-04-12T14:00:00Z,2,2,22000,Los Angeles FC,LA Galaxy,Banc of California Stadium,MLS,MLS 2023_Los Angeles FC vs LA Galaxy,Men's,22000,Draw
+2023-04-13T13:00:00Z,3,2,55097,Manchester City FC,Arsenal FC,Etihad Stadium,Premier League,Premier League 2023_Manchester City FC vs Arsenal FC,Men's,55000,Manchester City FC
+2023-04-14T12:00:00Z,0,1,70634,AS Roma,SSC Napoli,Stadio Olimpico,Serie A,Serie A 2023_AS Roma vs SSC Napoli,Men's,70634,SSC Napoli
